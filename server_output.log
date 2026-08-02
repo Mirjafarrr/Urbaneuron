@@ -1,0 +1,13 @@
+INFO:     Started server process [38460]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+[infer] Model loaded from checkpoints/best.pt on cuda
+INFO:     127.0.0.1:63800 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63840 - "GET /health HTTP/1.1" 200 OK
+[infer] Segmented 200x200 px > 1x1 = 1 tiles in 827 ms
+INFO:     127.0.0.1:63842 - "POST /segment HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58318 - "POST /segment HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58322 - "POST /segment HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:58324 - "POST /segment HTTP/1.1" 422 Unprocessable Entity
+INFO:     127.0.0.1:58326 - "GET /health HTTP/1.1" 200 OK
